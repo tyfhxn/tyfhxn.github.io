@@ -4,11 +4,49 @@
   
     
     <entry>
+      <title>对文件上传代码片段的猜测理解（php未学）</title>
+      <link href="2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+      <url>2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文件上传 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="2021/03/13/dui-upload-ba-chang-shang-chuan-wen-jian-hou-zai-shang-chuan-mu-lu-zhong-wen-jian-ming-bei-ti-huan-de-si-kao/"/>
+      <url>2021/03/13/dui-upload-ba-chang-shang-chuan-wen-jian-hou-zai-shang-chuan-mu-lu-zhong-wen-jian-ming-bei-ti-huan-de-si-kao/</url>
+      
+        <content type="html"><![CDATA[<p>{\rtf1}</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>各方面小知识点汇总</title>
       <link href="2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
       <url>2021/02/28/xiao-zhi-shi-dian-hui-zong/</url>
       
-        <content type="html"><![CDATA[<h1 id="小知识点汇总"><a href="#小知识点汇总" class="headerlink" title="小知识点汇总"></a>小知识点汇总</h1><h3 id="Nginx将404转发至index-php"><a href="#Nginx将404转发至index-php" class="headerlink" title="==Nginx将404转发至index.php=="></a>==Nginx将404转发至index.php==</h3><p><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210228180524.png"><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210228180541.png"></p><p>第一张图就是进行转发的状态</p><blockquote><p>即在url后面加入任意字符，页面自动跳转至指定页面，不会出现404报错</p></blockquote><p>第二张就是没有进行转发的</p><hr>]]></content>
+        <content type="html"><![CDATA[<h1 id="小知识点汇总"><a href="#小知识点汇总" class="headerlink" title="小知识点汇总"></a>小知识点汇总</h1><h3 id="Nginx将404转发至index-php"><a href="#Nginx将404转发至index-php" class="headerlink" title="==Nginx将404转发至index.php=="></a>==Nginx将404转发至index.php==</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152002.png"></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152011.png"></p><p>第一张图就是进行转发的状态</p><blockquote><p>即在url后面加入任意字符，页面自动跳转至指定页面，不会出现404报错</p></blockquote><p>第二张就是没有进行转发的</p><hr>]]></content>
       
       
       <categories>
@@ -33,7 +71,7 @@
       <link href="2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/"/>
       <url>2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/</url>
       
-        <content type="html"><![CDATA[<h2 id="order-by-的作用是排序"><a href="#order-by-的作用是排序" class="headerlink" title="order by 的作用是排序"></a>order by 的作用是排序</h2><ul><li>order by 默认的是升序， asc 升序 desc 降序</li></ul><blockquote><p>实际演示一下：</p><p><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210227110312.jpg"></p><p>这是一张数据表，接下来使用sql语句进行操作</p></blockquote><blockquote><p>查询表中所有内容：</p><p>SELECT * FROM twe</p><p><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210227110517.jpg"></p><p><strong>可以看到此时的记录排列，接下来使用order by进行排序</strong></p><p><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210227110559.png"></p><p>可以看到查询出来的结果会有差别这个结果就是因为按照不同字段排序所导致的</p><p><img src="https://cdn.jsdelivr.net/gh/tyfhxn/blog_images/img/20210227110630.png"></p><p>当结果不存在时会返回为空</p></blockquote><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>在sql注入时，通过order by判断字段数时，一定要先使前面的查询语句进行闭合，因为order by是对查询结果进行的一个排序，不管结果有没有，一定要使查询能够完整进行后才可以使用order by</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="order-by-的作用是排序"><a href="#order-by-的作用是排序" class="headerlink" title="order by 的作用是排序"></a>order by 的作用是排序</h2><ul><li>order by 默认的是升序， asc 升序 desc 降序</li></ul><blockquote><p>实际演示一下：</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151810.jpg"></p><p>这是一张数据表，接下来使用sql语句进行操作</p></blockquote><blockquote><p>查询表中所有内容：</p><p>SELECT * FROM twe</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151847.jpg"></p><p><strong>可以看到此时的记录排列，接下来使用order by进行排序</strong></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151913.png"></p><p>可以看到查询出来的结果会有差别这个结果就是因为按照不同字段排序所导致的</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151922.png"></p><p>当结果不存在时会返回为空</p></blockquote><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>在sql注入时，通过order by判断字段数时，一定要先使前面的查询语句进行闭合，因为order by是对查询结果进行的一个排序，不管结果有没有，一定要使查询能够完整进行后才可以使用order by</p>]]></content>
       
       
       <categories>
