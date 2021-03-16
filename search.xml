@@ -4,25 +4,13 @@
   
     
     <entry>
-      <title>对文件上传代码片段的猜测理解（php未学）</title>
-      <link href="2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
-      <url>2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
+      <title>linux学习</title>
+      <link href="2021/03/15/linux-xue-xi/"/>
+      <url>2021/03/15/linux-xue-xi/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 漏洞 </category>
-          
-      </categories>
+        <content type="html"><![CDATA[<ol><li><h5 id="使用分号可以输入和执行多条命令"><a href="#使用分号可以输入和执行多条命令" class="headerlink" title="使用分号可以输入和执行多条命令"></a>使用分号可以输入和执行多条命令</h5><p>如   </p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315223643.png"></p></li><li><h5 id="linux文件名最长可允许255个字符"><a href="#linux文件名最长可允许255个字符" class="headerlink" title="linux文件名最长可允许255个字符"></a>linux文件名最长可允许255个字符</h5></li><li><h5 id="Linux没有拓展名概念"><a href="#Linux没有拓展名概念" class="headerlink" title="Linux没有拓展名概念"></a>Linux没有拓展名概念</h5></li></ol>]]></content>
       
       
-        <tags>
-            
-            <tag> 文件上传 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -46,6 +34,31 @@
         <tags>
             
             <tag> sql注入\ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对文件上传代码片段的猜测理解（php未学）</title>
+      <link href="2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+      <url>2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文件上传 </tag>
             
         </tags>
       

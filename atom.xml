@@ -6,7 +6,7 @@
   <link href="http://tyfhxn.github.io/atom.xml" rel="self"/>
   
   <link href="http://tyfhxn.github.io/"/>
-  <updated>2021-03-15T07:21:36.545Z</updated>
+  <updated>2021-03-15T15:07:17.174Z</updated>
   <id>http://tyfhxn.github.io/</id>
   
   <author>
@@ -17,27 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>对文件上传代码片段的猜测理解（php未学）</title>
-    <link href="http://tyfhxn.github.io/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
-    <id>http://tyfhxn.github.io/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
+    <title>linux学习</title>
+    <link href="http://tyfhxn.github.io/2021/03/15/linux-xue-xi/"/>
+    <id>http://tyfhxn.github.io/2021/03/15/linux-xue-xi/</id>
     <published>2021-03-14T16:00:00.000Z</published>
-    <updated>2021-03-15T07:21:36.545Z</updated>
+    <updated>2021-03-15T15:07:17.174Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;使用分号可以输入和执行多条命令&quot;&gt;&lt;a href=&quot;#使用分号可以输入和执行多条命令&quot; class=&quot;headerlink&quot; title=&quot;使用分号可以输入和执行多条命令&quot;&gt;&lt;/a&gt;使用分号可以输入和执行多条命令&lt;/h5&gt;&lt;p&gt;如  </summary>
         
       
     
     
     
-    <category term="漏洞" scheme="http://tyfhxn.github.io/categories/%E6%BC%8F%E6%B4%9E/"/>
-    
-    
-    <category term="文件上传" scheme="http://tyfhxn.github.io/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
@@ -63,6 +60,31 @@
     
     
     <category term="sql注入\" scheme="http://tyfhxn.github.io/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对文件上传代码片段的猜测理解（php未学）</title>
+    <link href="http://tyfhxn.github.io/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+    <id>http://tyfhxn.github.io/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
+    <published>2021-03-14T16:00:00.000Z</published>
+    <updated>2021-03-15T07:21:36.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="漏洞" scheme="http://tyfhxn.github.io/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+    <category term="文件上传" scheme="http://tyfhxn.github.io/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
