@@ -6,7 +6,7 @@
   <link href="http://tyfhxn.github.io/atom.xml" rel="self"/>
   
   <link href="http://tyfhxn.github.io/"/>
-  <updated>2021-03-15T15:07:17.174Z</updated>
+  <updated>2021-04-19T15:09:22.764Z</updated>
   <id>http://tyfhxn.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对exp,poc,payload,shellcode的两个理解</title>
+    <link href="http://tyfhxn.github.io/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
+    <id>http://tyfhxn.github.io/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</id>
+    <published>2021-04-18T16:00:00.000Z</published>
+    <updated>2021-04-19T15:09:22.764Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一种理解&quot;&gt;&lt;a href=&quot;#第一种理解&quot; class=&quot;headerlink&quot; title=&quot;第一种理解&quot;&gt;&lt;/a&gt;第一种理解&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;从总体上理解&quot;&gt;&lt;a href=&quot;#从总体上理解&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="渗透测试" scheme="http://tyfhxn.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="名词理解" scheme="http://tyfhxn.github.io/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>命令执行相关学习</title>
+    <link href="http://tyfhxn.github.io/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
+    <id>http://tyfhxn.github.io/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</id>
+    <published>2021-03-15T16:00:00.000Z</published>
+    <updated>2021-03-16T14:39:52.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;命令执行相关学习&quot;&gt;&lt;a href=&quot;#命令执行相关学习&quot; class=&quot;headerlink&quot; title=&quot;命令执行相关学习&quot;&gt;&lt;/a&gt;命令执行相关学习&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CTF" scheme="http://tyfhxn.github.io/categories/CTF/"/>
+    
+    
+    <category term="命令执行" scheme="http://tyfhxn.github.io/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>linux学习</title>

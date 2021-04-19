@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>对exp,poc,payload,shellcode的两个理解</title>
+      <link href="2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
+      <url>2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一种理解"><a href="#第一种理解" class="headerlink" title="第一种理解"></a>第一种理解</h1><ul><li><h3 id="从总体上理解"><a href="#从总体上理解" class="headerlink" title="从总体上理解"></a>从总体上理解</h3></li></ul><blockquote><p>通过理解答主的回答，以下是我的理解<a href="https://www.zhihu.com/question/39878368?sort=created">https://www.zhihu.com/question/39878368?sort=created</a></p><p>payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的代码部分</p><p>shellcode：验证漏洞存在与否的输入+执行攻击命令的主要代码(payload)</p><p>exp：整个验证加攻击行为的过程</p><p>poc：详细记录攻击的过程和shellcode的代码内容，最后形成的技术文档一样的东西</p></blockquote><h1 id="第二种理解"><a href="#第二种理解" class="headerlink" title="第二种理解"></a>第二种理解</h1><ul><li><h3 id="从小的视角理解"><a href="#从小的视角理解" class="headerlink" title="从小的视角理解"></a>从小的视角理解</h3></li></ul><blockquote><p>payload：在获得目标机器的权限后，进行进一步渗透操作，可以说是内网渗透的范畴</p><p>shellcode：payload中的一种攻击方法，常说正向shell，反向shell等</p><p>poc：验证漏洞是否存在的代码或程序</p><p>exp：对目标机器的漏洞进行攻击，并成功执行攻击代码,并获得目标机器权限</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 名词理解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>命令执行相关学习</title>
+      <link href="2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
+      <url>2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="命令执行相关学习"><a href="#命令执行相关学习" class="headerlink" title="命令执行相关学习"></a>命令执行相关学习</h1><p><a href="https://xz.aliyun.com/t/2741">https://xz.aliyun.com/t/2741</a></p><p>命令执行：调用操作系统命令进行执行</p><p>远程代码执行：</p><p>调用服务器网站代码进行执行</p><p>常见的命令执行函数：</p><blockquote><p>system()</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 命令执行 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux学习</title>
       <link href="2021/03/15/linux-xue-xi/"/>
       <url>2021/03/15/linux-xue-xi/</url>
