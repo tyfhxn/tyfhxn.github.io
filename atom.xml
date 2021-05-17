@@ -6,7 +6,7 @@
   <link href="http://tyfhxn.github.io/atom.xml" rel="self"/>
   
   <link href="http://tyfhxn.github.io/"/>
-  <updated>2021-04-19T15:09:22.764Z</updated>
+  <updated>2021-05-17T14:48:19.847Z</updated>
   <id>http://tyfhxn.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python生成器中的yield和send理解</title>
+    <link href="http://tyfhxn.github.io/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/"/>
+    <id>http://tyfhxn.github.io/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</id>
+    <published>2021-05-16T16:00:00.000Z</published>
+    <updated>2021-05-17T14:48:19.847Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;《因为在使用Mriai编写机器人脚本，需要学习python生成器的内容，特此记录》&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用了yield关键字的函数称为生成器函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;yield的作用是在执行到该</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="http://tyfhxn.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://tyfhxn.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>对exp,poc,payload,shellcode的两个理解</title>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="随记随查">
+    <meta name="keywords" content="python生成器中的yield和send理解">
     <meta name="description" content="ctf 渗透测试 黑客 开发">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>各方面小知识点汇总 | 把酒祝东风</title>
+    <title>python生成器中的yield和send理解 | 把酒祝东风</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -425,7 +425,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">各方面小知识点汇总</h1>
+                    <h1 class="description center-align post-title">python生成器中的yield和send理解</h1>
                 </div>
             </div>
         </div>
@@ -541,8 +541,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%9A%8F%E8%AE%B0/">
-                                <span class="chip bg-color">随记</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -553,8 +553,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%9D%82%E9%A1%B9/" class="post-category">
-                                杂项
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -566,21 +566,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-28
+                    2021-05-17
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-03-15
+                    2021-05-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    66
+                    375
                 </div>
                 
 
@@ -610,14 +610,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="小知识点汇总"><a href="#小知识点汇总" class="headerlink" title="小知识点汇总"></a>小知识点汇总</h1><h3 id="Nginx将404转发至index-php"><a href="#Nginx将404转发至index-php" class="headerlink" title="==Nginx将404转发至index.php=="></a>==Nginx将404转发至index.php==</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152002.png"></p>
-<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152011.png"></p>
-<p>第一张图就是进行转发的状态</p>
+                <p><strong>《因为在使用Mriai编写机器人脚本，需要学习python生成器的内容，特此记录》</strong></p>
 <blockquote>
-<p>即在url后面加入任意字符，页面自动跳转至指定页面，不会出现404报错</p>
+<p>使用了yield关键字的函数称为生成器函数。</p>
 </blockquote>
-<p>第二张就是没有进行转发的</p>
-<hr>
+<p>yield的作用是在执行到该关键字时，就会返回到调用这个函数语句的位置，继续执行后续代码，直到后续出现类似send的函数，返回到之前yield关键字的位置，将send里面的参数传递到接收yield的变量</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">func1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 生成器函数</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"ok1"</span><span class="token punctuation">)</span>
+    x <span class="token operator">=</span> <span class="token number">10</span>  <span class="token comment"># 函数内局部变量x赋值为10</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token number">1</span>  <span class="token comment"># 这里就是send函数的关键</span>
+    <span class="token comment"># 之前我们创建的生成器，yield左边都是没有值（我现在不是很确定这里是不是应该叫做返回值，那就先用值代替）。</span>
+    <span class="token comment"># 现在我们的x会接收到一个值，这个值是什么，从哪里来的？我们继续看下去</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    <span class="token keyword">yield</span> x  <span class="token comment"># 这里试第二个断点</span>
+f1 <span class="token operator">=</span> func1<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 获取生成器对象</span>
+ret1 <span class="token operator">=</span> <span class="token builtin">next</span><span class="token punctuation">(</span>f1<span class="token punctuation">)</span>  <span class="token comment"># 运行到第一个yield</span>
+<span class="token comment"># ret1 = f1.send(None) #（这一句语句需要全部看完回头再看）当第一次执行生成器的时候，他并没有执行到yield这个位置，所以你一点传值，就会出现问题</span>
+<span class="token comment"># 谁去接收？没有对象接收就会报错，所以第一次如果一定要用send去调用，那就传一个None</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ret1<span class="token punctuation">)</span>  <span class="token comment"># 打印第一个yield返回的值</span>
+
+ret2 <span class="token operator">=</span> f1<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token string">'eee'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ret2<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -644,7 +660,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://tyfhxn.github.io/2021/02/28/xiao-zhi-shi-dian-hui-zong/">http://tyfhxn.github.io/2021/02/28/xiao-zhi-shi-dian-hui-zong/</a>
+                    <a href="http://tyfhxn.github.io/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/">http://tyfhxn.github.io/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -682,8 +698,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%9A%8F%E8%AE%B0/">
-                                    <span class="chip bg-color">随记</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -1116,17 +1132,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/">
+                <a href="/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="对文件上传代码片段的猜测理解（php未学）">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python生成器中的yield和send理解">
                         
-                        <span class="card-title">对文件上传代码片段的猜测理解（php未学）</span>
+                        <span class="card-title">python生成器中的yield和send理解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1136,26 +1153,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%BC%8F%E6%B4%9E/" class="post-category">
-                                    漏洞
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/">
-                        <span class="chip bg-color">文件上传</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -1169,13 +1187,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/">
+                <a href="/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="sql注入中order by的理解">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="对exp,poc,payload,shellcode的两个理解">
                         
-                        <span class="card-title">sql注入中order by的理解</span>
+                        <span class="card-title">对exp,poc,payload,shellcode的两个理解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1186,7 +1204,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-19
                             </span>
                         <span class="publish-author">
                             
@@ -1203,8 +1221,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
-                        <span class="chip bg-color">sql注入</span>
+                    <a href="/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/">
+                        <span class="chip bg-color">名词理解</span>
                     </a>
                     
                 </div>
