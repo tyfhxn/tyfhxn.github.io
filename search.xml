@@ -28,6 +28,31 @@
     </entry>
     
     
+    
+    <entry>
+      <title>各方面小知识点汇总</title>
+      <link href="/2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
+      <url>/2021/02/28/xiao-zhi-shi-dian-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="小知识点汇总"><a href="#小知识点汇总" class="headerlink" title="小知识点汇总"></a>小知识点汇总</h1><h3 id="Nginx将404转发至index-php"><a href="#Nginx将404转发至index-php" class="headerlink" title="==Nginx将404转发至index.php=="></a>==Nginx将404转发至index.php==</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152002.png"></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152011.png"></p><p>第一张图就是进行转发的状态</p><blockquote><p>即在url后面加入任意字符，页面自动跳转至指定页面，不会出现404报错</p></blockquote><p>第二张就是没有进行转发的</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂项 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
