@@ -51,6 +51,158 @@
   </entry>
   
   <entry>
+    <title>python生成器中的yield和send理解</title>
+    <link href="http://hjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/"/>
+    <id>http://hjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</id>
+    <published>2021-05-16T16:00:00.000Z</published>
+    <updated>2021-05-17T14:48:19.847Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;《因为在使用Mriai编写机器人脚本，需要学习python生成器的内容，特此记录》&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用了yield关键字的函数称为生成器函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;yield的作用是在执行到该</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="http://hjzdf.top/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://hjzdf.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对exp,poc,payload,shellcode的两个理解</title>
+    <link href="http://hjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
+    <id>http://hjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</id>
+    <published>2021-04-18T16:00:00.000Z</published>
+    <updated>2021-04-19T15:09:22.764Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一种理解&quot;&gt;&lt;a href=&quot;#第一种理解&quot; class=&quot;headerlink&quot; title=&quot;第一种理解&quot;&gt;&lt;/a&gt;第一种理解&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;从总体上理解&quot;&gt;&lt;a href=&quot;#从总体上理解&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="渗透测试" scheme="http://hjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="名词理解" scheme="http://hjzdf.top/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>命令执行相关学习</title>
+    <link href="http://hjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
+    <id>http://hjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</id>
+    <published>2021-03-15T16:00:00.000Z</published>
+    <updated>2021-03-16T14:39:52.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;命令执行相关学习&quot;&gt;&lt;a href=&quot;#命令执行相关学习&quot; class=&quot;headerlink&quot; title=&quot;命令执行相关学习&quot;&gt;&lt;/a&gt;命令执行相关学习&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="CTF" scheme="http://hjzdf.top/categories/CTF/"/>
+    
+    
+    <category term="命令执行" scheme="http://hjzdf.top/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux学习</title>
+    <link href="http://hjzdf.top/2021/03/15/linux-xue-xi/"/>
+    <id>http://hjzdf.top/2021/03/15/linux-xue-xi/</id>
+    <published>2021-03-14T16:00:00.000Z</published>
+    <updated>2021-03-15T15:07:17.174Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;使用分号可以输入和执行多条命令&quot;&gt;&lt;a href=&quot;#使用分号可以输入和执行多条命令&quot; class=&quot;headerlink&quot; title=&quot;使用分号可以输入和执行多条命令&quot;&gt;&lt;/a&gt;使用分号可以输入和执行多条命令&lt;/h5&gt;&lt;p&gt;如  </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sql注入使用union select时不回显数字的理解</title>
+    <link href="http://hjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
+    <id>http://hjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</id>
+    <published>2021-03-14T16:00:00.000Z</published>
+    <updated>2021-03-15T10:41:25.797Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="漏洞" scheme="http://hjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+    <category term="sql注入\" scheme="http://hjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对文件上传代码片段的猜测理解（php未学）</title>
+    <link href="http://hjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+    <id>http://hjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
+    <published>2021-03-14T16:00:00.000Z</published>
+    <updated>2021-03-15T07:21:36.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="漏洞" scheme="http://hjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+    <category term="文件上传" scheme="http://hjzdf.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>各方面小知识点汇总</title>
     <link href="http://hjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
     <id>http://hjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/</id>
@@ -72,6 +224,32 @@
     
     
     <category term="随记" scheme="http://hjzdf.top/tags/%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sql注入中order by的理解</title>
+    <link href="http://hjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/"/>
+    <id>http://hjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/</id>
+    <published>2021-02-26T16:00:00.000Z</published>
+    <updated>2021-03-15T07:19:32.635Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;order-by-的作用是排序&quot;&gt;&lt;a href=&quot;#order-by-的作用是排序&quot; class=&quot;headerlink&quot; title=&quot;order by 的作用是排序&quot;&gt;&lt;/a&gt;order by 的作用是排序&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;order by</summary>
+        
+      
+    
+    
+    
+    <category term="渗透测试" scheme="http://hjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="sql注入" scheme="http://hjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   

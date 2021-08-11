@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="newpapername, Hexo">
+    <meta name="keywords" content="exp,poc,payload,shellcode的两个解释">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>newpapername | Hexo</title>
+    <title>对exp,poc,payload,shellcode的两个理解 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">newpapername</h1>
+                    <h1 class="description center-align post-title">对exp,poc,payload,shellcode的两个理解</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/">
+                                <span class="chip bg-color">名词理解</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/" class="post-category">
+                                渗透测试
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -444,21 +457,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-11
+                    2021-04-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-11
+                    2021-04-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    240
                 </div>
                 
 
@@ -488,7 +501,26 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="第一种理解"><a href="#第一种理解" class="headerlink" title="第一种理解"></a>第一种理解</h1><ul>
+<li><h3 id="从总体上理解"><a href="#从总体上理解" class="headerlink" title="从总体上理解"></a>从总体上理解</h3></li>
+</ul>
+<blockquote>
+<p>通过理解答主的回答，以下是我的理解<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/39878368?sort=created">https://www.zhihu.com/question/39878368?sort=created</a></p>
+<p>payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的代码部分</p>
+<p>shellcode：验证漏洞存在与否的输入+执行攻击命令的主要代码(payload)</p>
+<p>exp：整个验证加攻击行为的过程</p>
+<p>poc：详细记录攻击的过程和shellcode的代码内容，最后形成的技术文档一样的东西</p>
+</blockquote>
+<h1 id="第二种理解"><a href="#第二种理解" class="headerlink" title="第二种理解"></a>第二种理解</h1><ul>
+<li><h3 id="从小的视角理解"><a href="#从小的视角理解" class="headerlink" title="从小的视角理解"></a>从小的视角理解</h3></li>
+</ul>
+<blockquote>
+<p>payload：在获得目标机器的权限后，进行进一步渗透操作，可以说是内网渗透的范畴</p>
+<p>shellcode：payload中的一种攻击方法，常说正向shell，反向shell等</p>
+<p>poc：验证漏洞是否存在的代码或程序</p>
+<p>exp：对目标机器的漏洞进行攻击，并成功执行攻击代码,并获得目标机器权限</p>
+</blockquote>
+
                 
             </div>
             <hr/>
@@ -514,7 +546,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hjzdf.top/2021/08/11/newpapername/">http://hjzdf.top/2021/08/11/newpapername/</a>
+                    <a href="http://hjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/">http://hjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -551,7 +583,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/">
+                                    <span class="chip bg-color">名词理解</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -725,43 +761,6 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/11/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/">
                     <div class="card-image">
                         
@@ -778,9 +777,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +797,55 @@
                     
                     <a href="/tags/python/">
                         <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="命令执行相关学习">
+                        
+                        <span class="card-title">命令执行相关学习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CTF/" class="post-category">
+                                    CTF
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">
+                        <span class="chip bg-color">命令执行</span>
                     </a>
                     
                 </div>

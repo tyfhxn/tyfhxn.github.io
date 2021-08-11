@@ -30,6 +30,144 @@
     
     
     <entry>
+      <title>python生成器中的yield和send理解</title>
+      <link href="/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/"/>
+      <url>/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</url>
+      
+        <content type="html"><![CDATA[<p><strong>《因为在使用Mriai编写机器人脚本，需要学习python生成器的内容，特此记录》</strong></p><blockquote><p>使用了yield关键字的函数称为生成器函数。</p></blockquote><p>yield的作用是在执行到该关键字时，就会返回到调用这个函数语句的位置，继续执行后续代码，直到后续出现类似send的函数，返回到之前yield关键字的位置，将send里面的参数传递到接收yield的变量</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">func1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 生成器函数</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"ok1"</span><span class="token punctuation">)</span>    x <span class="token operator">=</span> <span class="token number">10</span>  <span class="token comment"># 函数内局部变量x赋值为10</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>    x <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token number">1</span>  <span class="token comment"># 这里就是send函数的关键</span>    <span class="token comment"># 之前我们创建的生成器，yield左边都是没有值（我现在不是很确定这里是不是应该叫做返回值，那就先用值代替）。</span>    <span class="token comment"># 现在我们的x会接收到一个值，这个值是什么，从哪里来的？我们继续看下去</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>    <span class="token keyword">yield</span> x  <span class="token comment"># 这里试第二个断点</span>f1 <span class="token operator">=</span> func1<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 获取生成器对象</span>ret1 <span class="token operator">=</span> <span class="token builtin">next</span><span class="token punctuation">(</span>f1<span class="token punctuation">)</span>  <span class="token comment"># 运行到第一个yield</span><span class="token comment"># ret1 = f1.send(None) #（这一句语句需要全部看完回头再看）当第一次执行生成器的时候，他并没有执行到yield这个位置，所以你一点传值，就会出现问题</span><span class="token comment"># 谁去接收？没有对象接收就会报错，所以第一次如果一定要用send去调用，那就传一个None</span><span class="token keyword">print</span><span class="token punctuation">(</span>ret1<span class="token punctuation">)</span>  <span class="token comment"># 打印第一个yield返回的值</span>ret2 <span class="token operator">=</span> f1<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token string">'eee'</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>ret2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对exp,poc,payload,shellcode的两个理解</title>
+      <link href="/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
+      <url>/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一种理解"><a href="#第一种理解" class="headerlink" title="第一种理解"></a>第一种理解</h1><ul><li><h3 id="从总体上理解"><a href="#从总体上理解" class="headerlink" title="从总体上理解"></a>从总体上理解</h3></li></ul><blockquote><p>通过理解答主的回答，以下是我的理解<a href="https://www.zhihu.com/question/39878368?sort=created">https://www.zhihu.com/question/39878368?sort=created</a></p><p>payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的代码部分</p><p>shellcode：验证漏洞存在与否的输入+执行攻击命令的主要代码(payload)</p><p>exp：整个验证加攻击行为的过程</p><p>poc：详细记录攻击的过程和shellcode的代码内容，最后形成的技术文档一样的东西</p></blockquote><h1 id="第二种理解"><a href="#第二种理解" class="headerlink" title="第二种理解"></a>第二种理解</h1><ul><li><h3 id="从小的视角理解"><a href="#从小的视角理解" class="headerlink" title="从小的视角理解"></a>从小的视角理解</h3></li></ul><blockquote><p>payload：在获得目标机器的权限后，进行进一步渗透操作，可以说是内网渗透的范畴</p><p>shellcode：payload中的一种攻击方法，常说正向shell，反向shell等</p><p>poc：验证漏洞是否存在的代码或程序</p><p>exp：对目标机器的漏洞进行攻击，并成功执行攻击代码,并获得目标机器权限</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 名词理解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>命令执行相关学习</title>
+      <link href="/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
+      <url>/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="命令执行相关学习"><a href="#命令执行相关学习" class="headerlink" title="命令执行相关学习"></a>命令执行相关学习</h1><p><a href="https://xz.aliyun.com/t/2741">https://xz.aliyun.com/t/2741</a></p><p>命令执行：调用操作系统命令进行执行</p><p>远程代码执行：</p><p>调用服务器网站代码进行执行</p><p>常见的命令执行函数：</p><blockquote><p>system()</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 命令执行 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>linux学习</title>
+      <link href="/2021/03/15/linux-xue-xi/"/>
+      <url>/2021/03/15/linux-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<ol><li><h5 id="使用分号可以输入和执行多条命令"><a href="#使用分号可以输入和执行多条命令" class="headerlink" title="使用分号可以输入和执行多条命令"></a>使用分号可以输入和执行多条命令</h5><p>如   </p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315223643.png"></p></li><li><h5 id="linux文件名最长可允许255个字符"><a href="#linux文件名最长可允许255个字符" class="headerlink" title="linux文件名最长可允许255个字符"></a>linux文件名最长可允许255个字符</h5></li><li><h5 id="Linux没有拓展名概念"><a href="#Linux没有拓展名概念" class="headerlink" title="Linux没有拓展名概念"></a>Linux没有拓展名概念</h5></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sql注入使用union select时不回显数字的理解</title>
+      <link href="/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
+      <url>/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"><a href="#当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况" class="headerlink" title="当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"></a>当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况</h1><blockquote><h3 id="首先看一下不回显的状况以及解决方法"><a href="#首先看一下不回显的状况以及解决方法" class="headerlink" title="首先看一下不回显的状况以及解决方法"></a>首先看一下不回显的状况以及解决方法</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155919.png"></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155930.png"></p></blockquote><blockquote><h3 id="再看直接回显的状态"><a href="#再看直接回显的状态" class="headerlink" title="再看直接回显的状态"></a>再看直接回显的状态</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315160009.png"></p></blockquote><p>综合以上我们可以得出，有时候存在回显，但因为当前页面只能显示一部分数据，所以回显的数据被原先存在的数据挡住，无法显示。</p><p>解决方法：让之前的查询语句为错，查不到数据，所以位置就空出来了，这样union select 查询到的数据就可以显示出来了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sql注入\ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对文件上传代码片段的猜测理解（php未学）</title>
+      <link href="/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+      <url>/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文件上传 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>各方面小知识点汇总</title>
       <link href="/2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
       <url>/2021/02/28/xiao-zhi-shi-dian-hui-zong/</url>
@@ -47,6 +185,31 @@
         <tags>
             
             <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sql注入中order by的理解</title>
+      <link href="/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/"/>
+      <url>/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h2 id="order-by-的作用是排序"><a href="#order-by-的作用是排序" class="headerlink" title="order by 的作用是排序"></a>order by 的作用是排序</h2><ul><li>order by 默认的是升序， asc 升序 desc 降序</li></ul><blockquote><p>实际演示一下：</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151810.jpg"></p><p>这是一张数据表，接下来使用sql语句进行操作</p></blockquote><blockquote><p>查询表中所有内容：</p><p>SELECT * FROM twe</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151847.jpg"></p><p><strong>可以看到此时的记录排列，接下来使用order by进行排序</strong></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151913.png"></p><p>可以看到查询出来的结果会有差别这个结果就是因为按照不同字段排序所导致的</p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315151922.png"></p><p>当结果不存在时会返回为空</p></blockquote><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>在sql注入时，通过order by判断字段数时，一定要先使前面的查询语句进行闭合，因为order by是对查询结果进行的一个排序，不管结果有没有，一定要使查询能够完整进行后才可以使用order by</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sql注入 </tag>
             
         </tags>
       
