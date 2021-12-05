@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="docker">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>docker学习 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -418,12 +418,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">docker学习</h1>
                 </div>
             </div>
         </div>
@@ -537,12 +537,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/docker/">
+                                <span class="chip bg-color">-docker</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/docker/" class="post-category">
+                                docker
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -551,21 +564,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-11
+                    2021-08-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    1985-10-26
+                    2021-12-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    383
                 </div>
                 
 
@@ -595,19 +608,80 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="一、容器与镜像"><a href="#一、容器与镜像" class="headerlink" title="一、容器与镜像"></a>一、容器与镜像</h1><p>容器：包括能够修改镜像的模块和镜像</p>
+<h1 id="二、基本命令："><a href="#二、基本命令：" class="headerlink" title="二、基本命令："></a>二、基本命令：</h1><blockquote>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run &lt;容器名字&gt;   创建容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container ls     显示当前存在的容器(运行中)
+docker container ls -a  显示所有容器(包括停止的)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th>container id</th>
+<th>image</th>
+<th>command</th>
+<th>created</th>
+<th>status</th>
+<th>ports</th>
+<th>names</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容器对应id，唯一值</td>
+<td>使用的镜像名称</td>
+<td>执行的相关命令</td>
+<td>创建的时间</td>
+<td>当前镜像状态</td>
+<td>协议和端口</td>
+<td>容器名称</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop &lt;name or id&gt;    停止容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container rm &lt;name or id&gt;   删除容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p> 以上命令均可简写</p>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker ls
+docker ls -a
+docker run xxx
+docker stop xxx
+docker rm xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</blockquote>
+<h1 id="三、多容器操作"><a href="#三、多容器操作" class="headerlink" title="三、多容器操作"></a>三、多容器操作</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop $(docker container ps -aq)     停止运行多个容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container rm xxx -f     强制删除正在运行的容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="四、两种运行模式"><a href="#四、两种运行模式" class="headerlink" title="四、两种运行模式"></a>四、两种运行模式</h1><ol>
+<li><p>前台运行：在终端显示运行过程和日志，关闭终端服务停止</p>
+</li>
+<li><p>后台运行：加入-d 参数，</p>
+</li>
+<li><p>后台变前台：</p>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker attach xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>后台服务模式查看日志</p>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container logs -f    跟踪日志<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h1 id="五、交互模式"><a href="#五、交互模式" class="headerlink" title="五、交互模式"></a>五、交互模式</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run -it xxx sh    -it:交互模式,-sh:使用shell脚本<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这种方法缺点，退出交互模式容器也会停止</p>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run -d -p 80:80 xxx
+docker exec -it xxx sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>先进入后台模式，在启动交互模式，这样退出交互时容器不会停止</p>
+<h1 id="六、下载镜像"><a href="#六、下载镜像" class="headerlink" title="六、下载镜像"></a>六、下载镜像</h1><p>docker hub</p>
+<p>Dockerfile</p>
+<p>自有文件导入</p>
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image pull xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h1 id="七、查看详细镜像信息"><a href="#七、查看详细镜像信息" class="headerlink" title="七、查看详细镜像信息"></a>七、查看详细镜像信息</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image inspect xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image rm  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 
                 
             </div>
@@ -624,7 +698,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">一线天</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -634,7 +708,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hjzdf.top/2021/08/11/hello-world/">http://hjzdf.top/2021/08/11/hello-world/</a>
+                    <a href="http://hjzdf.top/2021/08/10/docker-xue-xi/">http://hjzdf.top/2021/08/10/docker-xue-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -647,7 +721,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">一线天</a>
                     !
                 </span>
             </div>
@@ -671,7 +745,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/docker/">
+                                    <span class="chip bg-color">-docker</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -841,48 +919,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2021/08/11/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2021/08/11/newpapername/">
                     <div class="card-image">
@@ -900,9 +939,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -910,6 +949,55 @@
                             
                         </span>
                     </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python生成器中的yield和send理解">
+                        
+                        <span class="card-title">python生成器中的yield和send理解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1112,7 +1200,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.3k</span>
+                        class="white-color">1.8k</span>
             
             
             

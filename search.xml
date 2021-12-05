@@ -5,12 +5,37 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2021/08/11/hello-world/"/>
-      <url>/2021/08/11/hello-world/</url>
+      <link href="/2021/12/05/hello-world/"/>
+      <url>/2021/12/05/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bwapp靶场通关（持续更新）</title>
+      <link href="/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/"/>
+      <url>/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<p><a href="#1">HTML Injection - Reflected (GET)</a></p><p>ghresgG</p><p>GREGRGH</p><p>EGEGRR</p><p>EGR</p><p>G</p><p>RESG</p><p>SF</p><p>GS</p><p>FD</p><p>SAF</p><p>DDSA</p><p>FA</p><p>DFDF</p><p>ASFA</p><p>DFD</p><p>ASDF</p><p>DAF</p><p>FA</p><p>DFSA</p><p>DF</p><p>FAF</p><p>AFA</p><p>FA</p><p>FA</p><p>FF</p><p>ASA</p><p>FAF</p><p>AF</p><p>AFA</p><p>FA</p><p>FA</p><p>FAF</p><p>AF</p><p>A</p><p>AA</p><p>A</p><p>A</p><p>FAF</p><p>AFA</p><p>FA</p><p>FAF</p><p>AFA</p><p>FA</p><p>FA</p><p>F</p><p>SGSD</p><p>G</p><p><a name="1">HTML Injection - Reflected (GET)</a><br>在国防大厦发噶是否阿文发噶我 阿嘎嘎嘎噶共爱人三个爱关啊嘎哇嘎嘎嘎</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 靶场 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -bwapp靶场 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +49,31 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>docker学习</title>
+      <link href="/2021/08/10/docker-xue-xi/"/>
+      <url>/2021/08/10/docker-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、容器与镜像"><a href="#一、容器与镜像" class="headerlink" title="一、容器与镜像"></a>一、容器与镜像</h1><p>容器：包括能够修改镜像的模块和镜像</p><h1 id="二、基本命令："><a href="#二、基本命令：" class="headerlink" title="二、基本命令："></a>二、基本命令：</h1><blockquote><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run &lt;容器名字&gt;   创建容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container ls     显示当前存在的容器(运行中)docker container ls -a  显示所有容器(包括停止的)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><table><thead><tr><th>container id</th><th>image</th><th>command</th><th>created</th><th>status</th><th>ports</th><th>names</th></tr></thead><tbody><tr><td>容器对应id，唯一值</td><td>使用的镜像名称</td><td>执行的相关命令</td><td>创建的时间</td><td>当前镜像状态</td><td>协议和端口</td><td>容器名称</td></tr></tbody></table><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop &lt;name or id&gt;    停止容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container rm &lt;name or id&gt;   删除容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p> 以上命令均可简写</p><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker lsdocker ls -adocker run xxxdocker stop xxxdocker rm xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote><h1 id="三、多容器操作"><a href="#三、多容器操作" class="headerlink" title="三、多容器操作"></a>三、多容器操作</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop $(docker container ps -aq)     停止运行多个容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container rm xxx -f     强制删除正在运行的容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="四、两种运行模式"><a href="#四、两种运行模式" class="headerlink" title="四、两种运行模式"></a>四、两种运行模式</h1><ol><li><p>前台运行：在终端显示运行过程和日志，关闭终端服务停止</p></li><li><p>后台运行：加入-d 参数，</p></li><li><p>后台变前台：</p><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker attach xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>后台服务模式查看日志</p><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container logs -f    跟踪日志<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h1 id="五、交互模式"><a href="#五、交互模式" class="headerlink" title="五、交互模式"></a>五、交互模式</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run -it xxx sh    -it:交互模式,-sh:使用shell脚本<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这种方法缺点，退出交互模式容器也会停止</p><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container run -d -p 80:80 xxxdocker exec -it xxx sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>先进入后台模式，在启动交互模式，这样退出交互时容器不会停止</p><h1 id="六、下载镜像"><a href="#六、下载镜像" class="headerlink" title="六、下载镜像"></a>六、下载镜像</h1><p>docker hub</p><p>Dockerfile</p><p>自有文件导入</p><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image pull xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="七、查看详细镜像信息"><a href="#七、查看详细镜像信息" class="headerlink" title="七、查看详细镜像信息"></a>七、查看详细镜像信息</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image inspect xxx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker image rm  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -docker </tag>
+            
+        </tags>
       
     </entry>
     

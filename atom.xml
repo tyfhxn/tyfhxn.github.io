@@ -18,9 +18,9 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://hjzdf.top/2021/08/11/hello-world/"/>
-    <id>http://hjzdf.top/2021/08/11/hello-world/</id>
-    <published>2021-08-11T02:19:05.522Z</published>
+    <link href="http://hjzdf.top/2021/12/05/hello-world/"/>
+    <id>http://hjzdf.top/2021/12/05/hello-world/</id>
+    <published>2021-12-05T07:23:26.987Z</published>
     <updated>1985-10-26T08:15:00.000Z</updated>
     
     
@@ -38,6 +38,31 @@
   </entry>
   
   <entry>
+    <title>bwapp靶场通关（持续更新）</title>
+    <link href="http://hjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/"/>
+    <id>http://hjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/</id>
+    <published>2021-12-04T16:00:00.000Z</published>
+    <updated>2021-12-05T07:39:54.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;#1&quot;&gt;HTML Injection - Reflected</summary>
+        
+      
+    
+    
+    
+    <category term="靶场" scheme="http://hjzdf.top/categories/%E9%9D%B6%E5%9C%BA/"/>
+    
+    
+    <category term="-bwapp靶场" scheme="http://hjzdf.top/tags/bwapp%E9%9D%B6%E5%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>newpapername</title>
     <link href="http://hjzdf.top/2021/08/11/newpapername/"/>
     <id>http://hjzdf.top/2021/08/11/newpapername/</id>
@@ -47,6 +72,32 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>docker学习</title>
+    <link href="http://hjzdf.top/2021/08/10/docker-xue-xi/"/>
+    <id>http://hjzdf.top/2021/08/10/docker-xue-xi/</id>
+    <published>2021-08-09T16:00:00.000Z</published>
+    <updated>2021-12-05T07:40:06.468Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、容器与镜像&quot;&gt;&lt;a href=&quot;#一、容器与镜像&quot; class=&quot;headerlink&quot; title=&quot;一、容器与镜像&quot;&gt;&lt;/a&gt;一、容器与镜像&lt;/h1&gt;&lt;p&gt;容器：包括能够修改镜像的模块和镜像&lt;/p&gt;
+&lt;h1 id=&quot;二、基本命令：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="http://hjzdf.top/categories/docker/"/>
+    
+    
+    <category term="-docker" scheme="http://hjzdf.top/tags/docker/"/>
     
   </entry>
   
