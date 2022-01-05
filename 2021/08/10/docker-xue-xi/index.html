@@ -571,14 +571,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-05
+                    2022-01-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    383
+                    407
                 </div>
                 
 
@@ -650,7 +650,11 @@ docker rm xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 
 
 </blockquote>
-<h1 id="三、多容器操作"><a href="#三、多容器操作" class="headerlink" title="三、多容器操作"></a>三、多容器操作</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop $(docker container ps -aq)     停止运行多个容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="三、多容器操作"><a href="#三、多容器操作" class="headerlink" title="三、多容器操作"></a>三、多容器操作</h1><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container stop $(docker container ps -a -q)  停止运行多个容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">docker  rm $(docker ps -a -q)          删除所有容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">docker rmi $(docker images -q)        删除所有镜像<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">docker container rm xxx -f     强制删除正在运行的容器<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -1191,7 +1195,7 @@ docker exec -it xxx sh<span aria-hidden="true" class="line-numbers-rows"><span><
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2019-2022</span>
             
             <span id="year">2019</span>
             <a href="/about" target="_blank">John Doe</a>
