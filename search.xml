@@ -193,31 +193,6 @@
     
     
     <entry>
-      <title>sql注入使用union select时不回显数字的理解</title>
-      <link href="/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
-      <url>/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</url>
-      
-        <content type="html"><![CDATA[<h1 id="当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"><a href="#当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况" class="headerlink" title="当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"></a>当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况</h1><blockquote><h3 id="首先看一下不回显的状况以及解决方法"><a href="#首先看一下不回显的状况以及解决方法" class="headerlink" title="首先看一下不回显的状况以及解决方法"></a>首先看一下不回显的状况以及解决方法</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155919.png"></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155930.png"></p></blockquote><blockquote><h3 id="再看直接回显的状态"><a href="#再看直接回显的状态" class="headerlink" title="再看直接回显的状态"></a>再看直接回显的状态</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315160009.png"></p></blockquote><p>综合以上我们可以得出，有时候存在回显，但因为当前页面只能显示一部分数据，所以回显的数据被原先存在的数据挡住，无法显示。</p><p>解决方法：让之前的查询语句为错，查不到数据，所以位置就空出来了，这样union select 查询到的数据就可以显示出来了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 漏洞 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> sql注入\ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>对文件上传代码片段的猜测理解（php未学）</title>
       <link href="/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
       <url>/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
@@ -235,6 +210,31 @@
         <tags>
             
             <tag> 文件上传 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sql注入使用union select时不回显数字的理解</title>
+      <link href="/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
+      <url>/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"><a href="#当我们使用union-select-1-2-3-4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况" class="headerlink" title="当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况"></a>当我们使用union select 1,2,3,4时，经常会出现当前页面并没有发生变化的情况，我用自己的理解来解释一下这个情况</h1><blockquote><h3 id="首先看一下不回显的状况以及解决方法"><a href="#首先看一下不回显的状况以及解决方法" class="headerlink" title="首先看一下不回显的状况以及解决方法"></a>首先看一下不回显的状况以及解决方法</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155919.png"></p><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315155930.png"></p></blockquote><blockquote><h3 id="再看直接回显的状态"><a href="#再看直接回显的状态" class="headerlink" title="再看直接回显的状态"></a>再看直接回显的状态</h3><p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315160009.png"></p></blockquote><p>综合以上我们可以得出，有时候存在回显，但因为当前页面只能显示一部分数据，所以回显的数据被原先存在的数据挡住，无法显示。</p><p>解决方法：让之前的查询语句为错，查不到数据，所以位置就空出来了，这样union select 查询到的数据就可以显示出来了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sql注入\ </tag>
             
         </tags>
       
