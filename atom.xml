@@ -6,7 +6,7 @@
   <link href="http://hjzdf.top/atom.xml" rel="self"/>
   
   <link href="http://hjzdf.top/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2022-01-09T07:27:58.628Z</updated>
   <id>http://hjzdf.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java学习</title>
+    <link href="http://hjzdf.top/2022/01/09/java-xue-xi/"/>
+    <id>http://hjzdf.top/2022/01/09/java-xue-xi/</id>
+    <published>2022-01-08T16:00:00.000Z</published>
+    <updated>2022-01-09T07:27:58.628Z</updated>
+    
+    
+    
+    
+    <category term="Java" scheme="http://hjzdf.top/categories/Java/"/>
+    
+    
+    <category term="-Java" scheme="http://hjzdf.top/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
