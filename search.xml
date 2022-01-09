@@ -193,31 +193,6 @@
     
     
     <entry>
-      <title>对文件上传代码片段的猜测理解（php未学）</title>
-      <link href="/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
-      <url>/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 漏洞 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文件上传 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>sql注入使用union select时不回显数字的理解</title>
       <link href="/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
       <url>/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</url>
@@ -235,6 +210,31 @@
         <tags>
             
             <tag> sql注入\ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对文件上传代码片段的猜测理解（php未学）</title>
+      <link href="/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+      <url>/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tyfhxn/blog_images/main/img/20210315152125.png">对该处的代码我理解为，函数将在temp临时文件内的数据通过函数转移到了新的文件中，传输过程传的是数据，所以最终显示的文件名是目录名而不是新建一个文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文件上传 </tag>
             
         </tags>
       
