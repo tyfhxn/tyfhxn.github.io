@@ -600,7 +600,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"靶场","value":1},{"name":"docker","value":1},{"name":"Java","value":1},{"name":"python","value":1},{"name":"渗透测试","value":2},{"name":"漏洞","value":2},{"name":"杂项","value":1},{"name":"CTF","value":1}],
+                data: [{"name":"靶场","value":1},{"name":"docker","value":1},{"name":"Java","value":1},{"name":"python","value":1},{"name":"CTF","value":1},{"name":"漏洞","value":2},{"name":"渗透测试","value":2},{"name":"杂项","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -624,7 +624,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["-bwapp靶场","-docker","-Java","python","sql注入","sql注入\\","名词理解","随记","命令执行","文件上传"]
+                data: ["-bwapp靶场","-docker","-Java","python","命令执行","sql注入\\","sql注入","名词理解","随记","文件上传"]
             }
         ],
         yAxis: [
@@ -831,14 +831,20 @@
             
             
             
-            <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
-                <span class="chip center-align waves-effect waves-light chip-default">sql注入</span>
+            <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">
+                <span class="chip center-align waves-effect waves-light chip-default">命令执行</span>
             </a>
             
             
             
             <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
                 <span class="chip center-align waves-effect waves-light chip-default">sql注入\</span>
+            </a>
+            
+            
+            
+            <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
+                <span class="chip center-align waves-effect waves-light chip-default">sql注入</span>
             </a>
             
             
@@ -851,12 +857,6 @@
             
             <a href="/tags/%E9%9A%8F%E8%AE%B0/">
                 <span class="chip center-align waves-effect waves-light chip-default">随记</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">
-                <span class="chip center-align waves-effect waves-light chip-default">命令执行</span>
             </a>
             
             
@@ -995,9 +995,6 @@
                                     |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;
                                     <a href="https://github.com/tyfhxn</a>
             <br>
-            
-                &nbsp;<i class=" fas fa-chart-area "></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color ">1.7k</span>
             
             
             
@@ -1186,25 +1183,9 @@ $(function () {
 
                                                         <!-- 雪花特效 -->
                                                         
-                                                            <script type="text/javascript">
-                                                                // 只在桌面版网页启用特效
-                                                                var windowWidth = $(window).width();
-                                                                if (windowWidth > 768) {
-                                                                    document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
-                                                                }
-                                                            </script>
-                                                            
 
                                                                 <!-- 鼠标星星特效 -->
                                                                 
-                                                                    <script type="text/javascript">
-                                                                        // 只在桌面版网页启用特效
-                                                                        var windowWidth = $(window).width();
-                                                                        if (windowWidth > 768) {
-                                                                            document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
-                                                                        }
-                                                                    </script>
-                                                                    
 
                                                                         
                                                                             <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
@@ -1231,6 +1212,8 @@ $(function () {
 </script>
 
                                                                                         
+                                                                                            <script src="/libs/others/clicklove.js" async="async"></script>
+                                                                                            
                                                                                                 
                                                                                                     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
                                                                                                     
@@ -1246,8 +1229,6 @@ $(function () {
                                                                                                                                         
 
                                                                                                                                                     
-                                                                                                                                                        <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
-                                                                                                                                                        
 
                                                                                                                                                             
                                                                                                                                                                 <script src="/libs/instantpage/instantpage.js" type="module"></script>
