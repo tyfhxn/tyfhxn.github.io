@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://bjzdf.top/atom.xml" rel="self"/>
+  <link href="https://bjzdf.top/atom.xml" rel="self"/>
   
-  <link href="http://bjzdf.top/"/>
+  <link href="https://bjzdf.top/"/>
   <updated>2022-01-09T07:27:58.628Z</updated>
-  <id>http://bjzdf.top/</id>
+  <id>https://bjzdf.top/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,25 +18,25 @@
   
   <entry>
     <title>Java学习</title>
-    <link href="http://bjzdf.top/2022/01/09/java-xue-xi/"/>
-    <id>http://bjzdf.top/2022/01/09/java-xue-xi/</id>
+    <link href="https://bjzdf.top/2022/01/09/java-xue-xi/"/>
+    <id>https://bjzdf.top/2022/01/09/java-xue-xi/</id>
     <published>2022-01-08T16:00:00.000Z</published>
     <updated>2022-01-09T07:27:58.628Z</updated>
     
     
     
     
-    <category term="Java" scheme="http://bjzdf.top/categories/Java/"/>
+    <category term="Java" scheme="https://bjzdf.top/categories/Java/"/>
     
     
-    <category term="-Java" scheme="http://bjzdf.top/tags/Java/"/>
+    <category term="-Java" scheme="https://bjzdf.top/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://bjzdf.top/2021/12/05/hello-world/"/>
-    <id>http://bjzdf.top/2021/12/05/hello-world/</id>
+    <link href="https://bjzdf.top/2021/12/05/hello-world/"/>
+    <id>https://bjzdf.top/2021/12/05/hello-world/</id>
     <published>2021-12-05T07:23:26.987Z</published>
     <updated>1985-10-26T08:15:00.000Z</updated>
     
@@ -56,8 +56,8 @@
   
   <entry>
     <title>bwapp靶场通关（持续更新）</title>
-    <link href="http://bjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/"/>
-    <id>http://bjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/</id>
+    <link href="https://bjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/"/>
+    <id>https://bjzdf.top/2021/12/05/bwapp-ba-chang-tong-guan-ji-lu/</id>
     <published>2021-12-04T16:00:00.000Z</published>
     <updated>2021-12-05T07:57:44.704Z</updated>
     
@@ -73,17 +73,17 @@
     
     
     
-    <category term="靶场" scheme="http://bjzdf.top/categories/%E9%9D%B6%E5%9C%BA/"/>
+    <category term="靶场" scheme="https://bjzdf.top/categories/%E9%9D%B6%E5%9C%BA/"/>
     
     
-    <category term="-bwapp靶场" scheme="http://bjzdf.top/tags/bwapp%E9%9D%B6%E5%9C%BA/"/>
+    <category term="-bwapp靶场" scheme="https://bjzdf.top/tags/bwapp%E9%9D%B6%E5%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>newpapername</title>
-    <link href="http://bjzdf.top/2021/08/11/newpapername/"/>
-    <id>http://bjzdf.top/2021/08/11/newpapername/</id>
+    <link href="https://bjzdf.top/2021/08/11/newpapername/"/>
+    <id>https://bjzdf.top/2021/08/11/newpapername/</id>
     <published>2021-08-11T01:28:04.000Z</published>
     <updated>2021-08-11T01:28:04.344Z</updated>
     
@@ -95,8 +95,8 @@
   
   <entry>
     <title>docker学习</title>
-    <link href="http://bjzdf.top/2021/08/10/docker-xue-xi/"/>
-    <id>http://bjzdf.top/2021/08/10/docker-xue-xi/</id>
+    <link href="https://bjzdf.top/2021/08/10/docker-xue-xi/"/>
+    <id>https://bjzdf.top/2021/08/10/docker-xue-xi/</id>
     <published>2021-08-09T16:00:00.000Z</published>
     <updated>2022-01-05T07:39:56.719Z</updated>
     
@@ -112,17 +112,17 @@
     
     
     
-    <category term="docker" scheme="http://bjzdf.top/categories/docker/"/>
+    <category term="docker" scheme="https://bjzdf.top/categories/docker/"/>
     
     
-    <category term="-docker" scheme="http://bjzdf.top/tags/docker/"/>
+    <category term="-docker" scheme="https://bjzdf.top/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>python生成器中的yield和send理解</title>
-    <link href="http://bjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/"/>
-    <id>http://bjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</id>
+    <link href="https://bjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/"/>
+    <id>https://bjzdf.top/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/</id>
     <published>2021-05-16T16:00:00.000Z</published>
     <updated>2021-05-17T14:48:19.847Z</updated>
     
@@ -141,17 +141,17 @@
     
     
     
-    <category term="python" scheme="http://bjzdf.top/categories/python/"/>
+    <category term="python" scheme="https://bjzdf.top/categories/python/"/>
     
     
-    <category term="python" scheme="http://bjzdf.top/tags/python/"/>
+    <category term="python" scheme="https://bjzdf.top/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>对exp,poc,payload,shellcode的两个理解</title>
-    <link href="http://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
-    <id>http://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</id>
+    <link href="https://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/"/>
+    <id>https://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</id>
     <published>2021-04-18T16:00:00.000Z</published>
     <updated>2021-12-11T14:14:59.068Z</updated>
     
@@ -167,17 +167,17 @@
     
     
     
-    <category term="渗透测试" scheme="http://bjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    <category term="渗透测试" scheme="https://bjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="名词理解" scheme="http://bjzdf.top/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/"/>
+    <category term="名词理解" scheme="https://bjzdf.top/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>命令执行相关学习</title>
-    <link href="http://bjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
-    <id>http://bjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</id>
+    <link href="https://bjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/"/>
+    <id>https://bjzdf.top/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/</id>
     <published>2021-03-15T16:00:00.000Z</published>
     <updated>2021-03-16T14:39:52.913Z</updated>
     
@@ -192,17 +192,17 @@
     
     
     
-    <category term="CTF" scheme="http://bjzdf.top/categories/CTF/"/>
+    <category term="CTF" scheme="https://bjzdf.top/categories/CTF/"/>
     
     
-    <category term="命令执行" scheme="http://bjzdf.top/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
+    <category term="命令执行" scheme="https://bjzdf.top/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>linux学习</title>
-    <link href="http://bjzdf.top/2021/03/15/linux-xue-xi/"/>
-    <id>http://bjzdf.top/2021/03/15/linux-xue-xi/</id>
+    <link href="https://bjzdf.top/2021/03/15/linux-xue-xi/"/>
+    <id>https://bjzdf.top/2021/03/15/linux-xue-xi/</id>
     <published>2021-03-14T16:00:00.000Z</published>
     <updated>2021-03-15T15:07:17.174Z</updated>
     
@@ -223,8 +223,8 @@
   
   <entry>
     <title>sql注入使用union select时不回显数字的理解</title>
-    <link href="http://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
-    <id>http://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</id>
+    <link href="https://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
+    <id>https://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</id>
     <published>2021-03-14T16:00:00.000Z</published>
     <updated>2021-03-15T10:41:25.797Z</updated>
     
@@ -239,17 +239,17 @@
     
     
     
-    <category term="漏洞" scheme="http://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
+    <category term="漏洞" scheme="https://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
     
     
-    <category term="sql注入\" scheme="http://bjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    <category term="sql注入\" scheme="https://bjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
   <entry>
     <title>对文件上传代码片段的猜测理解（php未学）</title>
-    <link href="http://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
-    <id>http://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
+    <link href="https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+    <id>https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
     <published>2021-03-14T16:00:00.000Z</published>
     <updated>2021-03-15T07:21:36.545Z</updated>
     
@@ -264,17 +264,17 @@
     
     
     
-    <category term="漏洞" scheme="http://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
+    <category term="漏洞" scheme="https://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
     
     
-    <category term="文件上传" scheme="http://bjzdf.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    <category term="文件上传" scheme="https://bjzdf.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
   <entry>
     <title>各方面小知识点汇总</title>
-    <link href="http://bjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
-    <id>http://bjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/</id>
+    <link href="https://bjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/"/>
+    <id>https://bjzdf.top/2021/02/28/xiao-zhi-shi-dian-hui-zong/</id>
     <published>2021-02-27T16:00:00.000Z</published>
     <updated>2021-03-15T07:20:51.703Z</updated>
     
@@ -289,17 +289,17 @@
     
     
     
-    <category term="杂项" scheme="http://bjzdf.top/categories/%E6%9D%82%E9%A1%B9/"/>
+    <category term="杂项" scheme="https://bjzdf.top/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
-    <category term="随记" scheme="http://bjzdf.top/tags/%E9%9A%8F%E8%AE%B0/"/>
+    <category term="随记" scheme="https://bjzdf.top/tags/%E9%9A%8F%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>sql注入中order by的理解</title>
-    <link href="http://bjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/"/>
-    <id>http://bjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/</id>
+    <link href="https://bjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/"/>
+    <id>https://bjzdf.top/2021/02/27/sql-zhu-ru-zhong-order-by-de-li-jie/</id>
     <published>2021-02-26T16:00:00.000Z</published>
     <updated>2021-03-15T07:19:32.635Z</updated>
     
@@ -315,10 +315,10 @@
     
     
     
-    <category term="渗透测试" scheme="http://bjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    <category term="渗透测试" scheme="https://bjzdf.top/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="sql注入" scheme="http://bjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    <category term="sql注入" scheme="https://bjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
