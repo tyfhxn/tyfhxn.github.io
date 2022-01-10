@@ -6,7 +6,7 @@
   <link href="https://bjzdf.top/atom.xml" rel="self"/>
   
   <link href="https://bjzdf.top/"/>
-  <updated>2022-01-09T10:17:58.642Z</updated>
+  <updated>2022-01-10T03:20:44.607Z</updated>
   <id>https://bjzdf.top/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Java学习</title>
-    <link href="https://bjzdf.top/2022/01/09/java-xue-xi/"/>
-    <id>https://bjzdf.top/2022/01/09/java-xue-xi/</id>
+    <link href="https://bjzdf.top/2022/01/09/java-jian-jie/"/>
+    <id>https://bjzdf.top/2022/01/09/java-jian-jie/</id>
     <published>2022-01-08T16:00:00.000Z</published>
-    <updated>2022-01-09T10:17:58.642Z</updated>
+    <updated>2022-01-10T03:20:44.607Z</updated>
     
     
       
@@ -29,8 +29,7 @@
         
         
     <summary type="html">&lt;h1 id=&quot;一、Java发展史&quot;&gt;&lt;a href=&quot;#一、Java发展史&quot; class=&quot;headerlink&quot; title=&quot;一、Java发展史&quot;&gt;&lt;/a&gt;一、Java发展史&lt;/h1&gt;&lt;p&gt;开始流行起源于Applet&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;J2SE </summary>
+&lt;h3 id=&quot;1-分类&quot;&gt;&lt;a</summary>
         
       
     
@@ -87,19 +86,6 @@
     
     
     <category term="-bwapp靶场" scheme="https://bjzdf.top/tags/bwapp%E9%9D%B6%E5%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>newpapername</title>
-    <link href="https://bjzdf.top/2021/08/11/newpapername/"/>
-    <id>https://bjzdf.top/2021/08/11/newpapername/</id>
-    <published>2021-08-11T01:28:04.000Z</published>
-    <updated>2021-08-11T01:28:04.344Z</updated>
-    
-    
-    
-    
     
   </entry>
   
