@@ -463,21 +463,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-11
+                    2022-01-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    400
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -576,6 +576,122 @@ c
 空集合的定义方式：a<span class="token operator">=</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>==数据类型的检测使用python自带的<code>type()</code>函数==</p>
+<h3 id="数据类型强制转换"><a href="#数据类型强制转换" class="headerlink" title="数据类型强制转换"></a>数据类型强制转换</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><h3 id="内置函数"><a href="#内置函数" class="headerlink" title="内置函数"></a>内置函数</h3><p>内置函数全局可用，无需导入或配置，常用内置函数如下</p>
+<p><img src="https://gitee.com/t_d_l_h/blogimages/raw/master/img/7.png"></p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ol>
+<li><p>变量的作用是将数据暂存在内存中</p>
+</li>
+<li><p>变量命名规则</p>
+</li>
+</ol>
+<ul>
+<li>必须以字母或下划线开头</li>
+<li>不能以数字开头</li>
+<li>只能包含字母数字和下划线（A-z、0-9、_）</li>
+<li>变量名区分大小写</li>
+</ul>
+<ol start="3">
+<li>python标准的命名法是“蛇形命名法”，即多个单词之间用 ’ _ ‘ 分割</li>
+<li>可以在一行中同时声明多个变量</li>
+</ol>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p><img src="https://gitee.com/t_d_l_h/blogimages/raw/master/img/8.png"></p>
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p><img src="https://gitee.com/t_d_l_h/blogimages/raw/master/img/9.png"></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Arithmetic Operations in Python</span>
+<span class="token comment"># Integers</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Addition: '</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>        <span class="token comment"># 3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Subtraction: '</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>     <span class="token comment"># 1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Multiplication: '</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># 6</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">'Division: '</span><span class="token punctuation">,</span> <span class="token number">4</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>       <span class="token comment"># 2.0  Division in Python gives floating number</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Division: '</span><span class="token punctuation">,</span> <span class="token number">6</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>        <span class="token comment"># 3.0         </span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Division: '</span><span class="token punctuation">,</span> <span class="token number">7</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>        <span class="token comment"># 3.5</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Division without the remainder: '</span><span class="token punctuation">,</span> <span class="token number">7</span> <span class="token operator">//</span> <span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment"># 3,  gives without the floating number or without the remaining</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">'Division without the remainder: '</span><span class="token punctuation">,</span><span class="token number">7</span> <span class="token operator">//</span> <span class="token number">3</span><span class="token punctuation">)</span>   <span class="token comment"># 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Modulus: '</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">)</span>         <span class="token comment"># 1, Gives the remainder</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Exponentiation: '</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">**</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment"># 9 it means 2 * 2 * 2</span>
+
+<span class="token comment"># Floating numbers</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Floating Point Number, PI'</span><span class="token punctuation">,</span> <span class="token number">3.14</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Floating Point Number, gravity'</span><span class="token punctuation">,</span> <span class="token number">9.81</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Complex numbers</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Complex number: '</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1j</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Multiplying complex numbers: '</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1j</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> <span class="token number">1j</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p><img src="https://gitee.com/t_d_l_h/blogimages/raw/master/img/10.png"></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span><span class="token punctuation">)</span>     <span class="token comment"># True, because 3 is greater than 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">>=</span> <span class="token number">2</span><span class="token punctuation">)</span>    <span class="token comment"># True, because 3 is greater than 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span>     <span class="token comment"># False,  because 3 is greater than 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span>     <span class="token comment"># True, because 2 is less than 3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">&lt;=</span> <span class="token number">3</span><span class="token punctuation">)</span>    <span class="token comment"># True, because 2 is less than 3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>    <span class="token comment"># False, because 3 is not equal to 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span>    <span class="token comment"># True, because 3 is not equal to 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'mango'</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'avocado'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># False</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'mango'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'avocado'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'mango'</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'avocado'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'milk'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'meat'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>      <span class="token comment"># False</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'milk'</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'meat'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>      <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'tomato'</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'potato'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'python'</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">'dragon'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># False</span>
+
+
+<span class="token comment"># Comparing something gives either a True or False</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'True == True: '</span><span class="token punctuation">,</span> <span class="token boolean">True</span> <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'True == False: '</span><span class="token punctuation">,</span> <span class="token boolean">True</span> <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'False == False:'</span><span class="token punctuation">,</span> <span class="token boolean">False</span> <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>is 如果两个变量是同一个对象，返回true</li>
+<li>is not 如果两个变量不是同一个对象，返回true</li>
+<li>in  如果查询的列表包含某个项目，返回true</li>
+<li>not in 如果查询的列表没有包含某个项目，返回true</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'1 is 1'</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token keyword">is</span> <span class="token number">1</span><span class="token punctuation">)</span>                   <span class="token comment"># True - because the data values are the same</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'1 is not 2'</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token number">2</span><span class="token punctuation">)</span>           <span class="token comment"># True - because 1 is not 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'A in Asabeneh'</span><span class="token punctuation">,</span> <span class="token string">'A'</span> <span class="token keyword">in</span> <span class="token string">'Asabeneh'</span><span class="token punctuation">)</span> <span class="token comment"># True - A found in the string</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'B in Asabeneh'</span><span class="token punctuation">,</span> <span class="token string">'B'</span> <span class="token keyword">in</span> <span class="token string">'Asabeneh'</span><span class="token punctuation">)</span> <span class="token comment"># False - there is no uppercase B</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'coding'</span> <span class="token keyword">in</span> <span class="token string">'coding for all'</span><span class="token punctuation">)</span> <span class="token comment"># True - because coding for all has the word coding</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'a in an:'</span><span class="token punctuation">,</span> <span class="token string">'a'</span> <span class="token keyword">in</span> <span class="token string">'an'</span><span class="token punctuation">)</span>      <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'4 is 2 ** 2:'</span><span class="token punctuation">,</span> <span class="token number">4</span> <span class="token keyword">is</span> <span class="token number">2</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment"># True</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p><img src="https://gitee.com/t_d_l_h/blogimages/raw/master/img/11.png"></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token keyword">and</span> <span class="token number">4</span> <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment"># True - because both statements are true</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token keyword">and</span> <span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment"># False - because the second statement is false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&lt;</span> <span class="token number">2</span> <span class="token keyword">and</span> <span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment"># False - because both statements are false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'True and True: '</span><span class="token punctuation">,</span> <span class="token boolean">True</span> <span class="token keyword">and</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token keyword">or</span> <span class="token number">4</span> <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># True - because both statements are true</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token keyword">or</span> <span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># True - because one of the statements is true</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&lt;</span> <span class="token number">2</span> <span class="token keyword">or</span> <span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># False - because both statements are false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'True or False:'</span><span class="token punctuation">,</span> <span class="token boolean">True</span> <span class="token keyword">or</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token number">3</span> <span class="token operator">></span> <span class="token number">2</span><span class="token punctuation">)</span>     <span class="token comment"># False - because 3 > 2 is true, then not True gives False</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token boolean">True</span><span class="token punctuation">)</span>      <span class="token comment"># False - Negation, the not operator turns true to false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token boolean">False</span><span class="token punctuation">)</span>     <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token keyword">not</span> <span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment"># True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token keyword">not</span> <span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token comment"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
 
                 
             </div>
@@ -1110,7 +1226,7 @@ c
             <br>
             
                 &nbsp;<i class=" fas fa-chart-area "></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color ">2.2k</span>
+                        class="white-color ">2.9k</span>
             
             
             
