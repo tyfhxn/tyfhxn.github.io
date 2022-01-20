@@ -6,7 +6,7 @@
   <link href="https://bjzdf.top/atom.xml" rel="self"/>
   
   <link href="https://bjzdf.top/"/>
-  <updated>2022-01-20T14:34:55.163Z</updated>
+  <updated>2022-01-20T14:54:17.371Z</updated>
   <id>https://bjzdf.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://bjzdf.top/2022/01/10/python30day/"/>
     <id>https://bjzdf.top/2022/01/10/python30day/</id>
     <published>2022-01-10T15:53:00.000Z</published>
-    <updated>2022-01-20T14:34:55.163Z</updated>
+    <updated>2022-01-20T14:54:17.371Z</updated>
     
     
       
@@ -245,31 +245,6 @@
   </entry>
   
   <entry>
-    <title>对文件上传代码片段的猜测理解（php未学）</title>
-    <link href="https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
-    <id>https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
-    <published>2021-03-14T16:00:00.000Z</published>
-    <updated>2021-03-15T07:21:36.545Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="漏洞" scheme="https://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
-    
-    
-    <category term="文件上传" scheme="https://bjzdf.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>sql注入使用union select时不回显数字的理解</title>
     <link href="https://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/"/>
     <id>https://bjzdf.top/2021/03/15/sql-zhu-ru-shi-yong-union-select-shi-bu-hui-xian-shu-zi-de-li-jie/</id>
@@ -291,6 +266,31 @@
     
     
     <category term="sql注入\" scheme="https://bjzdf.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对文件上传代码片段的猜测理解（php未学）</title>
+    <link href="https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/"/>
+    <id>https://bjzdf.top/2021/03/15/dui-wen-jian-shang-chuan-dai-ma-de-li-jie/</id>
+    <published>2021-03-14T16:00:00.000Z</published>
+    <updated>2021-03-15T07:21:36.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="漏洞" scheme="https://bjzdf.top/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+    <category term="文件上传" scheme="https://bjzdf.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
