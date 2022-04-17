@@ -4,13 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="exp,poc,payload,shellcode的两个解释">
-    <meta name="description" content="第一种理解
-从总体上理解
-
-
-通过理解答主的回答，以下是我的理解https://www.zhihu.com/question/39878368?sort=created
-payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的代码部分">
+    <meta name="keywords" content="python,flask">
+    <meta name="description" content="了解并掌握使用flask进行开发">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +17,7 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>对exp,poc,payload,shellcode的两个理解 | Hexo</title>
+    <title>flask学习记录 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +310,12 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">对exp,poc,payload,shellcode的两个理解</h1>
+                    <h1 class="description center-align post-title">flask学习记录</h1>
                 </div>
             </div>
         </div>
@@ -436,8 +431,8 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/">
-                                <span class="chip bg-color">名词理解</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -448,8 +443,8 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/" class="post-category">
-                                渗透测试
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -461,28 +456,28 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-19
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-11
+                    2022-04-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    240
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -505,25 +500,228 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第一种理解"><a href="#第一种理解" class="headerlink" title="第一种理解"></a>第一种理解</h1><ul>
-<li><h3 id="从总体上理解"><a href="#从总体上理解" class="headerlink" title="从总体上理解"></a>从总体上理解</h3></li>
-</ul>
+                <h2 id="flask程序的基本结构"><a href="#flask程序的基本结构" class="headerlink" title="flask程序的基本结构"></a>flask程序的基本结构</h2><h3 id="1-终端启动flask服务"><a href="#1-终端启动flask服务" class="headerlink" title="1.终端启动flask服务"></a>1.终端启动flask服务</h3><pre class="line-numbers language-none"><code class="language-none">cmd下
+set FLASK_APP&#x3D;XXX.py
+set FLASK_ENV&#x3D;development(调试模式)
+
+powershell下
+$env:FLASK_APP&#x3D;&quot;test.py&quot;
+$env:FLASK_ENV&#x3D;&quot;development&quot;
+
+启动任意地址访问
+flask run --host&#x3D;0.0.0.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-初始化"><a href="#2-初始化" class="headerlink" title="2.初始化"></a>2.初始化</h3><p>所有flask程序都必须创建一个程序实例，web服务器使用一种<code>web服务器网关接口(Web Server Gateway Interface,WSGI)协议</code>，把接收到客户端的所有请求都转交给这个对象处理，程序实例是Flask类的对象</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#创建flask实例</span>
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+app<span class="token operator">=</span>Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>Flask类的构造函数只有一个必须指定的参数，即程序主模块或包的名字</p>
 <blockquote>
-<p>通过理解答主的回答，以下是我的理解<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/39878368?sort=created">https://www.zhihu.com/question/39878368?sort=created</a></p>
-<p>payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的代码部分</p>
-<p>shellcode：验证漏洞存在与否的输入+执行攻击命令的主要代码(payload)</p>
-<p>exp：整个验证加攻击行为的过程</p>
-<p>poc：详细记录攻击的过程和shellcode的代码内容，最后形成的技术文档一样的东西</p>
+<p>参数使用<code>__name__</code>的原因是这个参数可以决定程序的根目录，以便后续资源定和寻找</p>
 </blockquote>
-<h1 id="第二种理解"><a href="#第二种理解" class="headerlink" title="第二种理解"></a>第二种理解</h1><ul>
-<li><h3 id="从小的视角理解"><a href="#从小的视角理解" class="headerlink" title="从小的视角理解"></a>从小的视角理解</h3></li>
-</ul>
+<h3 id="3-路由和视图函数"><a href="#3-路由和视图函数" class="headerlink" title="3. 路由和视图函数"></a>3. 路由和视图函数</h3><ol>
+<li><p>路由和视图函数</p>
+<p>因为在flask中，客户端把请求发送到web服务器，web服务器把请求发送到flask程序实例中，因此程序实例需要知道每个url请求了什么样的内容(代码)，所以需要保存url到python函数的映射关系，而处理url和函数之间关系的程序称为==路由==</p>
+<p>在flask中，最简便的定义路由的方法是通过程序实例提供的<code>app.route修饰器</code>，，把修饰的函数注册为路由</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#将index()函数注册为Flask程序实例根地址，</span>
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">'&lt;h1>Hello World&lt;/h1>'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
 <blockquote>
-<p>payload：在获得目标机器的权限后，进行进一步渗透操作，可以说是内网渗透的范畴</p>
-<p>shellcode：payload中的一种攻击方法，常说正向shell，反向shell等</p>
-<p>poc：验证漏洞是否存在的代码或程序</p>
-<p>exp：对目标机器的漏洞进行攻击，并成功执行攻击代码,并获得目标机器权限</p>
+<p>index()函数即为==视图函数==，视图函数返回的可以是包含HTML的简单字符串，也可以是复杂的表单 </p>
 </blockquote>
+</li>
+<li><p>让url中包含可变成分</p>
+<p>flask中可以在route修饰器中使用句法即可实现可变url</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;test>'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">b</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string-interpolation"><span class="token string">f'1---</span><span class="token interpolation"><span class="token punctuation">&#123;</span>test<span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>使用<code>&lt;&gt;</code>来获取动态内容，任何能匹配静态部分的url都会映射到这个路由上。通过在视图函数添加参数，可以让flask将动态部分作为参数传入函数</p>
+</blockquote>
+<p>路由中的动态部分默认使用字符串，但可以认为指定数据类型</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;int:test>'</span><span class="token punctuation">)</span>   <span class="token comment">#(缺省值)接受字符串</span>
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;int:test>'</span><span class="token punctuation">)</span>   <span class="token comment">#接受正整数</span>
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;float:test>'</span><span class="token punctuation">)</span> <span class="token comment">#接受正浮点数</span>
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;path:test>'</span><span class="token punctuation">)</span>  <span class="token comment">#接受路径数据(可以包含斜线)</span>
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/hello/&lt;uuid:test>'</span><span class="token punctuation">)</span>  <span class="token comment">#接收UUID(通用唯一识别码)字符串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>启动flask服务器</p>
+<p>实例程序使用<code>run()</code>启动Flask集成的开发web服务器</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment">#判断name的目的是防止被别的模块调用运行，比如父级脚本启动不同的服务器，使用这个可以避免被父级启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>服务启动后，会进入轮询，等待并处理请求。设置<code>debug=True</code>开启调试模式（激活调试器和重载程序），还可以添加host参数，当host=0.0.0.0时，表示接受任意主机访问</p>
+</li>
+</ol>
+<h3 id="4-请求响应循环"><a href="#4-请求响应循环" class="headerlink" title="4. 请求响应循环"></a>4. 请求响应循环</h3><ol>
+<li><p>程序和请求上下文</p>
+<p>flask收到请求时，需要对请求通过视图函数进行处理，请求对象封装了客户端发送的http请求，将请求对象作为参数传入视图函数中，从而访问请求对象。但为了避免大量参数传入视图函数中，==flask使用上下文临时把某些对象变为全局可访问==</p>
+<blockquote>
+<p>flask使用上下文让特定的变量在一个线程中全局可访问，但不会干扰其他线程</p>
+</blockquote>
+<p>flask中有两种上下文</p>
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>上下文</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>current_app</td>
+<td>程序上下文</td>
+<td>一个被激活的程序的实例</td>
+</tr>
+<tr>
+<td>g</td>
+<td>程序上下文</td>
+<td>保存一次请求的东西，在下一次请求发起后失效</td>
+</tr>
+<tr>
+<td>request</td>
+<td>请求上下文</td>
+<td>封装http请求中的内容</td>
+</tr>
+<tr>
+<td>session</td>
+<td>请求上下文</td>
+<td>保存客户端身份认证相关的东西</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>上下文可以理解为一种环境，通过环境来完成下一步工作，类似于语文中的阅读理解，从上下文中获取想要的信息</p>
+</blockquote>
+</li>
+<li><p>请求调度</p>
+<p>使用app.route装饰器或app.add_url_rule()生成映射</p>
+<blockquote>
+<p>补充：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/eric-nirnava/p/endpoint.html#:~:text=endpoint%20%E2%80%93%20the%20endpoint%20for%20the%20registered%20URL,to%20be%20forwarded%20to%20the%20underlying%20Rule%20object">https://www.cnblogs.com/eric-nirnava/p/endpoint.html#:~:text=endpoint%20%E2%80%93%20the%20endpoint%20for%20the%20registered%20URL,to%20be%20forwarded%20to%20the%20underlying%20Rule%20object</a>.</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/594504110python/p/10131950.html">https://www.cnblogs.com/594504110python/p/10131950.html</a></p>
+</blockquote>
+<p>app.url_map()查看当前所有路由和函数映射</p>
+<p>其中/static是flaks添加的特殊路由，用来访问静态文件</p>
+</li>
+<li><p>请求钩子</p>
+<p>通过装饰器实现，具体可参考如下文章<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/971e80c0c8f1">https://www.jianshu.com/p/971e80c0c8f1</a></p>
+</li>
+<li><p>响应</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">可以将返回状态码作为<span class="token keyword">return</span>的第二个参数
+<span class="token keyword">return</span> <span class="token string">"Nothing"</span><span class="token punctuation">,</span><span class="token number">404</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>重定向</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">'https://xxx.com'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>错误处理</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">return</span> abort<span class="token punctuation">(</span>状态码<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><h3 id="1-补充："><a href="#1-补充：" class="headerlink" title="1. 补充："></a>1. 补充：</h3><p>在url中包含可变参数，尖括号中的内容为可变参数</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/test/&lt;userId>"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>userId<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"this is %s"</span> <span class="token operator">%</span> userId<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-引入模板"><a href="#2-引入模板" class="headerlink" title="2. 引入模板"></a>2. 引入模板</h3><p>模板文件统一放在项目中的templates目录下</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> render_templa
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/&lt;name>"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">test</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span>name<span class="token operator">=</span>name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>模板内容举例</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title&#123;&#123;name&#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>this is &#123;&#123;name&#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><p>过滤器</p>
+<p>可以在模板内通过过滤器来改变变量</p>
+<p>常见过滤器</p>
+<table>
+<thead>
+<tr>
+<th>safe</th>
+<th>渲染时不转义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>capitalize</td>
+<td>首字母大写，其他小写</td>
+</tr>
+<tr>
+<td>lower</td>
+<td>值转换为小写</td>
+</tr>
+<tr>
+<td>upper</td>
+<td>转换为大写</td>
+</tr>
+<tr>
+<td>title</td>
+<td>每个单词首字母大写</td>
+</tr>
+<tr>
+<td>trim</td>
+<td>去掉首尾空格</td>
+</tr>
+<tr>
+<td>striptags</td>
+<td>渲染之前删除所以HTML标签</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>控制结构</p>
+<ol>
+<li><p>if语句</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">&#123;</span><span class="token operator">%</span> <span class="token keyword">if</span> xxx<span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span> <span class="token keyword">else</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span> endif <span class="token operator">%</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>for循环</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">&#123;</span><span class="token operator">%</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> xxx <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>宏</p>
+<p>可以理解为在html中的函数</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#test.html</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span>macro test<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>name<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span>endmacro<span class="token operator">%</span><span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span><span class="token operator">%</span><span class="token keyword">for</span> i <span class="token keyword">in</span> x<span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>test<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span>endfor<span class="token operator">%</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>外部文件导入使用：保存在单独的文件中，使用的时候，在当前文件内引入</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">&#123;</span><span class="token operator">%</span> <span class="token keyword">import</span> <span class="token string">'test.html'</span> <span class="token keyword">as</span> macros<span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span><span class="token keyword">for</span> i <span class="token keyword">in</span> x<span class="token operator">%</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>macros<span class="token punctuation">.</span>test<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#123;</span><span class="token operator">%</span>endfor<span class="token operator">%</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+</li>
+<li><p>重复使用</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">&#123;</span><span class="token operator">%</span>include <span class="token string">'test.html'</span><span class="token operator">%</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+</li>
+</ol>
+<h3 id="3-flask-bootstrap"><a href="#3-flask-bootstrap" class="headerlink" title="3. flask-bootstrap"></a>3. flask-bootstrap</h3><p>flask-bootstrap是twiter开发的一款开源网站框架，通过pip安装后，可以在html文件中使用</p>
+<pre class="line-numbers language-none"><code class="language-none">&#123;% extends &quot;bootstrap&#x2F;base.html&quot; %&#125;
+extends实现了模板继承<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>让程序拓展成一个具有基本页面结构的基模板，基模板中定义了可以在衍生模板中重新定义的块，通过<code>block 和 endblock</code>添加到基模板中</p>
+<blockquote>
+<p>由于很都块是flask-bootstrap自用的，所以直接重定义可能出现一些问题，所以一般在修改的地方，先使用&#123;&#123;super()&#125;&#125;加载原有模板内容</p>
+</blockquote>
+<h3 id="4-链接"><a href="#4-链接" class="headerlink" title="4. 链接"></a>4. 链接</h3><p><code>url_for()</code> </p>
+<pre class="line-numbers language-none"><code class="language-none">第一个参数是路由对应的视图函数名，如果路由包含可变部分，则第二个参数将动态部分作为关键字传入，如
+url_for(&#39;user&#39;,name&#x3D;&#39;john&#39;,_external&#x3D;False)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -550,7 +748,7 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/">https://bjzdf.top/2021/04/19/dui-exp-poc-payload-shellcode-de-liang-ge-li-jie/</a>
+                    <a href="https://bjzdf.top/2022/01/21/flask-xue-xi/">https://bjzdf.top/2022/01/21/flask-xue-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,8 +786,8 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%90%8D%E8%AF%8D%E7%90%86%E8%A7%A3/">
-                                    <span class="chip bg-color">名词理解</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -763,29 +961,30 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/05/17/python-sheng-cheng-qi-zhong-de-yield-he-send-li-jie/">
+                <a href="/2022/01/21/flask-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python生成器中的yield和send理解">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="flask学习记录">
                         
-                        <span class="card-title">python生成器中的yield和send理解</span>
+                        <span class="card-title">flask学习记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            了解并掌握使用flask进行开发
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +997,7 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -816,31 +1016,31 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/16/ming-ling-zhi-xing-xiang-guan-zhi-shi-dian/">
+                <a href="/2022/01/10/python30day/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="命令执行相关学习">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="GitHub中30-Days-Of-Python学习记录">
                         
-                        <span class="card-title">命令执行相关学习</span>
+                        <span class="card-title">GitHub中30-Days-Of-Python学习记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            通过30天时间，能够熟练掌握python有关的知识和操作
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/CTF/" class="post-category">
-                                    CTF
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
@@ -850,8 +1050,8 @@ payload：是对漏洞进行攻击行为的代码中执行主要攻击任务的�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">
-                        <span class="chip bg-color">命令执行</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="https://bjzdf.top/atom.xml" rel="self"/>
   
   <link href="https://bjzdf.top/"/>
-  <updated>2022-01-20T14:54:17.371Z</updated>
+  <updated>2022-04-17T12:31:07.162Z</updated>
   <id>https://bjzdf.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>flask学习记录</title>
+    <link href="https://bjzdf.top/2022/01/21/flask-xue-xi/"/>
+    <id>https://bjzdf.top/2022/01/21/flask-xue-xi/</id>
+    <published>2022-01-21T11:11:00.000Z</published>
+    <updated>2022-04-17T12:31:07.162Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;flask程序的基本结构&quot;&gt;&lt;a href=&quot;#flask程序的基本结构&quot; class=&quot;headerlink&quot; title=&quot;flask程序的基本结构&quot;&gt;&lt;/a&gt;flask程序的基本结构&lt;/h2&gt;&lt;h3 id=&quot;1-终端启动flask服务&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://bjzdf.top/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://bjzdf.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub中30-Days-Of-Python学习记录</title>
     <link href="https://bjzdf.top/2022/01/10/python30day/"/>
     <id>https://bjzdf.top/2022/01/10/python30day/</id>
     <published>2022-01-10T15:53:00.000Z</published>
-    <updated>2022-01-20T14:54:17.371Z</updated>
+    <updated>2022-01-21T11:10:59.245Z</updated>
     
     
       
